@@ -239,11 +239,12 @@ a{color:inherit}
 }
 .suite-img{
   width: 100%;
-  height: 320px;
-  object-fit: cover;
+  height: 260px;        /* 你想要多大就改这里：220/260/300 */
+  display: block;       /* 防止 img 底部多出一点空隙 */
+  object-fit: cover;    /* 裁切填满，不变形 */
+  object-position: center;
   border-radius: 16px;
   border: 1px solid #e9e9e9;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 .ph{
   height:170px;
@@ -346,5 +347,6 @@ a{color:inherit}
   .contact{grid-template-columns: 1fr}
   .banner{flex-direction:column; align-items:flex-start}
 }
+
 
 
