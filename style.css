@@ -225,6 +225,18 @@ a{color:inherit}
   gap:12px;
   margin-top:16px;
 }
+.gallery-img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.gallery-img:hover{
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
 .ph{
   height:170px;
   border-radius:var(--radius);
@@ -326,3 +338,4 @@ a{color:inherit}
   .contact{grid-template-columns: 1fr}
   .banner{flex-direction:column; align-items:flex-start}
 }
+
