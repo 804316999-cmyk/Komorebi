@@ -3,34 +3,231 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My GitHub Page</title>
+  <title>Komorebi Alps</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="topbar">
-    <div class="brand">Komorebi Alps</div>
 
-    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainMenu">
-      Menu
-    </button>
+<body>
+  <!-- Top bar -->
+  <header class="header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">K</span>
+        <span class="brand-text">
+          <span class="brand-name">Komorebi Alps</span>
+          <span class="brand-tagline">Light • Silence • Balance</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        <span class="sr-only">Open menu</span>
+        ☰
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="#overview">Overview</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rooms">Suites & Rooms</a>
+        <a href="#dining">Dining</a>
+        <a href="#spa">Spa</a>
+        <a href="#meetings">Meetings</a>
+        <a class="nav-cta" href="#reserve">Reserve</a>
+      </nav>
+    </div>
   </header>
 
-  <nav class="menu" id="mainMenu">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <p class="hero-kicker">Leysin • Swiss Alps</p>
+      <h1 class="hero-title">A quiet wellness retreat built for modern rhythm.</h1>
+      <p class="hero-subtitle">
+        A calm space for breathing, recovery, and focus — designed around light, silence and balance.
+      </p>
 
-  <main class="content">
-    <h1 id="home">Home</h1>
-    <p>It works. Click “Menu” to open the first-level menu.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#reserve">Reserve</a>
+        <a class="btn btn-ghost" href="#overview">Explore</a>
+      </div>
+    </div>
+  </section>
 
-    <h2 id="about">About</h2>
-    <p>Basic GitHub Pages site.</p>
+  <!-- Quick info strip -->
+  <section class="strip" id="reserve">
+    <div class="strip-inner">
+      <div class="strip-item">
+        <div class="strip-label">Location</div>
+        <div class="strip-value">Leysin, Switzerland</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-label">Hours</div>
+        <div class="strip-value">Daily 08:00–21:00</div>
+      </div>
+      <div class="strip-item">
+        <div class="strip-label">Booking</div>
+        <div class="strip-value">Book Your Practice</div>
+      </div>
+      <a class="btn btn-small" href="#contact">Contact</a>
+    </div>
+  </section>
 
-    <h2 id="contact">Contact</h2>
-    <p>Email: example@example.com</p>
+  <main class="main">
+    <!-- Overview -->
+    <section class="section" id="overview">
+      <div class="section-head">
+        <h2>Overview</h2>
+        <p>Minimal luxury, Alpine calm, and Japanese-inspired rituals.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Light</h3>
+          <p>Soft natural light and warm materials. Designed for reset.</p>
+        </article>
+        <article class="card">
+          <h3>Silence</h3>
+          <p>Quiet zones, mindful flow, and private practice spaces.</p>
+        </article>
+        <article class="card">
+          <h3>Balance</h3>
+          <p>Movement, recovery, tea rituals, and restorative sleep.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery (placeholder) -->
+    <section class="section" id="gallery">
+      <div class="section-head">
+        <h2>Gallery</h2>
+        <p>Visual mood and atmosphere (placeholders for now).</p>
+      </div>
+
+      <div class="grid">
+        <div class="ph"></div>
+        <div class="ph"></div>
+        <div class="ph"></div>
+        <div class="ph"></div>
+      </div>
+    </section>
+
+    <!-- Rooms -->
+    <section class="section" id="rooms">
+      <div class="section-head">
+        <h2>Suites & Rooms</h2>
+        <p>Simple, warm, and calm — built for deep rest.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="ph ph-tall"></div>
+        <div class="stack">
+          <div class="list-item">
+            <h3>Mountain View Suite</h3>
+            <p>Quiet suite with tea corner and soft light workspace.</p>
+          </div>
+          <div class="list-item">
+            <h3>Ritual Room</h3>
+            <p>Minimal room designed for breathwork and recovery.</p>
+          </div>
+          <div class="list-item">
+            <h3>Student Calm Pack</h3>
+            <p>Short sessions and bundles tailored for campus rhythm.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dining -->
+    <section class="section" id="dining">
+      <div class="section-head">
+        <h2>Dining</h2>
+        <p>Tea-forward, seasonal, and quietly refined.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Tea Bar</h3>
+          <p>Matcha, hōjicha, and Swiss herbs — simple and clean.</p>
+        </article>
+        <article class="card">
+          <h3>Light Meals</h3>
+          <p>Balanced dishes for recovery days and focus days.</p>
+        </article>
+        <article class="card">
+          <h3>Evening Ritual</h3>
+          <p>Slow service, low noise, warm lighting.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Spa -->
+    <section class="section" id="spa">
+      <div class="section-head">
+        <h2>Spa</h2>
+        <p>Recovery, breath, and stillness — built for consistency.</p>
+      </div>
+      <div class="banner">
+        <div>
+          <h3>Signature Practice</h3>
+          <p>Guided sessions, quiet recovery, and seasonal rituals.</p>
+        </div>
+        <a class="btn btn-primary" href="#reserve">Book a Session</a>
+      </div>
+    </section>
+
+    <!-- Meetings -->
+    <section class="section" id="meetings">
+      <div class="section-head">
+        <h2>Meetings</h2>
+        <p>Small retreats, private workshops, and mindful corporate sessions.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Small Team Retreat</h3>
+          <p>Half-day or full-day focus sessions (B2B option).</p>
+        </article>
+        <article class="card">
+          <h3>Workshops</h3>
+          <p>Breathwork, recovery, and light rituals for groups.</p>
+        </article>
+        <article class="card">
+          <h3>Private Booking</h3>
+          <p>Simple proposals and flexible time slots.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Basic contact block (can be replaced by a form later).</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact-box">
+          <div class="contact-label">Email</div>
+          <div class="contact-value"><a href="mailto:hello@komorebialps.com">hello@komorebialps.com</a></div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-label">Instagram</div>
+          <div class="contact-value"><a href="#" target="_blank" rel="noopener">@komorebialps</a></div>
+        </div>
+        <div class="contact-box">
+          <div class="contact-label">Address</div>
+          <div class="contact-value">Leysin, Vaud, Switzerland</div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Komorebi Alps</div>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
