@@ -43,31 +43,35 @@ a{color:inherit}
   text-decoration:none;
 }
 .brand-mark{
-  width:48px;
-  height:48px;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:#fff;
+  width:64px;              /* ⬅️ 比现在明显更大 */
+  height:64px;
+  border-radius:50%;       /* 圆形更像徽章 */
+  background:#f6f5f1;      /* 和页面背景统一 */
+  border:2px solid rgba(0,0,0,0.15);
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  overflow:hidden;     /* 关键：禁止大图溢出 */
-  flex:0 0 auto;       /* 防止被拉伸 */
-}
-.brand-mark img{
-  max-width:100%;
-  max-height:100%;
-  width:auto;
-  height:auto;
-  object-fit:contain;  /* 关键：完整缩放，不裁切 */
-  display:block;
+  position:relative;
+  top:12px;                /* ⬅️ 下沉，压到 hero 上 */
+  z-index:60;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.12);
+  overflow:hidden;
+  flex-shrink:0;
 }
 .brand-text{display:flex; flex-direction:column; line-height:1.1}
 .brand-name{font-weight:700; letter-spacing:.2px}
 .brand-tagline{font-size:12px; color:var(--muted)}
-
+.brand-mark img{
+  max-width:80%;
+  max-height:80%;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
 .nav-toggle{
   margin-left:auto;
   border:1px solid var(--line);
@@ -362,6 +366,7 @@ a{color:inherit}
   .contact{grid-template-columns: 1fr}
   .banner{flex-direction:column; align-items:flex-start}
 }
+
 
 
 
